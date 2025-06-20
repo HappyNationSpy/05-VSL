@@ -5,7 +5,7 @@ const TitleAndVSL = () => {
     <div id="title-and-vsl-container">
       <div id="title-and-vsl-wrapper">
         <div id="title-wrapper">
-          <h2 class="elementor-heading-title elementor-size-default">
+          <h2>
             Descubra com dois cliques{" "}
             <span id="“des”">
               os criativos que grandes players estão escalando nesse exato
