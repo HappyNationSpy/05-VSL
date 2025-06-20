@@ -3,6 +3,15 @@
   --foreground: #171717;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-saira);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

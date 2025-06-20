@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${saira.variable} ${rubik.variable} ${darkerGrotesque.variable} antialiased`}
+        className={`${rubik.variable} ${saira.variable} ${darkerGrotesque.variable}`}
       >
         {children}
       </body>
