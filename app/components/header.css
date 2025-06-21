@@ -3,10 +3,16 @@
   box-sizing: border-box;
   color: white;
   font-family: var(--font-rubik);
-  font-size: 6px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.1px;
   padding: 5px 20px;
   text-align: center;
   text-wrap: pretty;
+}
+
+@media screen and (max-width: 350px) {
+  #header {
+    font-size: 8px;
+  }
 }
