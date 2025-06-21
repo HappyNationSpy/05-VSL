@@ -1,5 +1,22 @@
+import dynamic from "next/dynamic";
 import "./titleAndVSL.css";
-import Video from "./Video";
+
+const VideoSkeleton = () => {
+  return (
+    <div
+      style={{
+        width: "100%",
+        padding: "56.25% 0 0 0" /* Proporção 16:9 */,
+        backgroundColor: "#e0e0e0", // Um cinza claro
+        borderRadius: "8px",
+      }}
+    />
+  );
+};
+
+const DynamicVideo = dynamic(() => import("./Video"), {
+  loading: () => <VideoSkeleton />,
+});
 
 const TitleAndVSL = () => {
   return (
@@ -21,7 +38,7 @@ const TitleAndVSL = () => {
           id="vsl-player-container"
           style={{ margin: "0 auto", width: "100%", position: "relative" }}
         >
-          <Video />
+          <DynamicVideo />
         </div>
       </div>
     </div>
