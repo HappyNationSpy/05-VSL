@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 // Você pode criar um ícone de Play em SVG ou usar uma imagem
 const PlayIcon = () => (
@@ -27,17 +27,7 @@ const PlayIcon = () => (
 );
 
 const Video = () => {
-  const [showVideo, setShowVideo] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowVideo(true);
-    }, 2000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+  const [showVideo, setShowVideo] = useState(true);
 
   return (
     <>
