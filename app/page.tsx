@@ -1,14 +1,28 @@
 import dynamic from "next/dynamic";
 import Header from "./components/header";
+import TitleAndVSL from "./components/titleAndVSL";
+
 import "./page.css";
 
-const DynamicTitleAndVSL = dynamic(() => import("./components/titleAndVSL"));
+const DynamicVideo = dynamic(() => import("./components/Video"));
 
 export default function Home() {
   return (
     <div id="page">
       <Header />
-      <DynamicTitleAndVSL />
+      <TitleAndVSL />
+      <div
+        id="vsl-player-container"
+        style={{
+          margin: "0 auto",
+          width: "100%",
+          position: "relative",
+          marginTop: "-200px",
+          zIndex: 1,
+        }}
+      >
+        <DynamicVideo />
+      </div>
     </div>
   );
 }
