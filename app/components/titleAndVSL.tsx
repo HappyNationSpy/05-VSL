@@ -1,5 +1,4 @@
 import "./titleAndVSL.css";
-import Video from "./Video";
 
 const TitleAndVSL = () => {
   return (
@@ -21,7 +20,7 @@ const TitleAndVSL = () => {
           id="vsl-player-container"
           style={{ margin: "0 auto", width: "100%", position: "relative" }}
         >
-          <Video />
+          {/* <Video /> */}
         </div>
       </div>
     </div>
