@@ -1,3 +1,4 @@
+"use client";
 import dynamic from "next/dynamic";
 import "./titleAndVSL.css";
 
@@ -15,6 +16,7 @@ const VideoSkeleton = () => {
 };
 
 const DynamicVideo = dynamic(() => import("./Video"), {
+  ssr: false,
   loading: () => <VideoSkeleton />,
 });
 
