@@ -30,7 +30,13 @@ const Video = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
-    setShowVideo(true);
+    const timer = setTimeout(() => {
+      setShowVideo(true);
+    }, 2000);
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
