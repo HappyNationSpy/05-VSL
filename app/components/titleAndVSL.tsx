@@ -27,7 +27,7 @@ const TitleAndVSL = () => {
         <div id="title-wrapper">
           <div>
             <h2>
-              Descubra com dois cliques{" "}
+              Descubra com doiss cliques{" "}
               <span id="“des”">
                 os criativos que grandes players estão escalando nesse exato
                 momento
