@@ -15,7 +15,7 @@ const VideoSkeleton = () => {
   );
 };
 
-const DynamicVideo = dynamic(() => import("./video"), {
+const DynamicVideo = dynamic(() => import("./Video"), {
   ssr: false,
   loading: () => <VideoSkeleton />,
 });
