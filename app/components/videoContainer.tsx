@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image"; // 1. Importe o componente Image
 
 const DynamicVideo = dynamic(() => import("./Video"));
 
@@ -22,15 +23,37 @@ const VideoContainer = () => {
   return (
     <div
       id="vsl-player-container"
-      style={{
-        margin: "0 auto",
-        width: "100%",
-        position: "relative",
-        zIndex: 1,
-      }}
+      style={
+        shouldShowVideo
+          ? {
+              margin: "0 auto",
+              width: "100%",
+              position: "relative",
+              zIndex: 1,
+            }
+          : {
+              margin: "0 auto",
+              width: "100%",
+              position: "relative",
+              zIndex: 1,
+              padding: "56.25% 0 0 0",
+              backgroundColor: "black",
+              borderRadius: "12px",
+              overflow: "hidden",
+            }
+      }
     >
-      {/* Só renderiza o vídeo quando shouldShowVideo for true */}
-      {shouldShowVideo && <DynamicVideo />}
+      {shouldShowVideo ? (
+        <DynamicVideo />
+      ) : (
+        <Image
+          src="/thumbnail.jpg"
+          alt="Prévia do vídeo de apresentação"
+          fill
+          priority
+          style={{ objectFit: "cover" }}
+        />
+      )}
     </div>
   );
 };
