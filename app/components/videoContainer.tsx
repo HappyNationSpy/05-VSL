@@ -13,7 +13,7 @@ const VideoContainer = () => {
     // Estratégia de Atraso: Espera 3 segundos após o carregamento da página
     const timer = setTimeout(() => {
       setShouldShowVideo(true);
-    }, 2000); // 3 segundos de atraso
+    }, 3000); // 3 segundos de atraso
 
     // Limpa o timer se o componente for desmontado
     return () => clearTimeout(timer);
