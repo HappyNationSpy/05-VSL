@@ -1,4 +1,3 @@
-"use client";
 import "./titleAndVSL.css";
 
 const TitleAndVSL = () => {
