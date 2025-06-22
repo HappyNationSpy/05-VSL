@@ -1,6 +1,6 @@
 import Header from "./components/header";
 import TitleAndVSL from "./components/titleAndVSL";
-// import VideoContainer from "./components/videoContainer";
+import VideoContainer from "./components/videoContainer";
 import "./page.css";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <div id="page">
       <Header />
       <TitleAndVSL />
-      {/* <VideoContainer /> */}
+      <VideoContainer />
     </div>
   );
 }
