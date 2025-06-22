@@ -1,6 +1,4 @@
-"use client";
 import Script from "next/script";
-import { useEffect, useState } from "react";
 
 // Você pode criar um ícone de Play em SVG ou usar uma imagem
 // // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -27,51 +25,37 @@ import { useEffect, useState } from "react";
 // );
 
 const Video = () => {
-  // Estado para controlar se devemos mostrar o vídeo
-  const [shouldShowVideo, setShouldShowVideo] = useState(false);
-
-  useEffect(() => {
-    // Estratégia de Atraso: Espera 3 segundos após o carregamento da página
-    const timer = setTimeout(() => {
-      setShouldShowVideo(true);
-    }, 3000); // 3 segundos de atraso
-
-    // Limpa o timer se o componente for desmontado
-    return () => clearTimeout(timer);
-  }, []);
   return (
-    shouldShowVideo && (
-      <>
-        <Script
-          src="https://scripts.converteai.net/lib/js/smartplayer/v1/sdk.min.js"
-          data-id="6852f9583be2bca68d08f0ac"
-          strategy="lazyOnload"
-        />
-        <div
+    <>
+      <Script
+        src="https://scripts.converteai.net/lib/js/smartplayer/v1/sdk.min.js"
+        data-id="6852f9583be2bca68d08f0ac"
+        strategy="lazyOnload"
+      />
+      <div
+        style={{
+          padding: "56.25% 0 0 0",
+          position: "relative",
+        }}
+      >
+        <iframe
+          frameBorder="0"
+          allowFullScreen={true}
+          allow="autoplay"
+          src="https://scripts.converteai.net/50168b72-b90c-4307-88b1-05e70a16f603/players/6852f9583be2bca68d08f0ac/embed.html?autoplay=1" // Adicionado ?autoplay=1
+          id="ifr_6852f9583be2bca68d08f0ac"
+          title="vsl"
           style={{
-            padding: "56.25% 0 0 0",
-            position: "relative",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
           }}
-        >
-          <iframe
-            frameBorder="0"
-            allowFullScreen={true}
-            allow="autoplay"
-            src="https://scripts.converteai.net/50168b72-b90c-4307-88b1-05e70a16f603/players/6852f9583be2bca68d08f0ac/embed.html?autoplay=1" // Adicionado ?autoplay=1
-            id="ifr_6852f9583be2bca68d08f0ac"
-            title="vsl"
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-            }}
-            referrerPolicy="origin"
-          ></iframe>
-        </div>
-      </>
-    )
+          referrerPolicy="origin"
+        ></iframe>
+      </div>
+    </>
   );
 };
 
