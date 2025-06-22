@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image"; // 1. Importe o componente Image
 
-const DynamicVideo = dynamic(() => import("./video"));
+const DynamicVideo = dynamic(() => import("./Video"));
 
 const VideoContainer = () => {
   // Estado para controlar se devemos mostrar o vídeo
