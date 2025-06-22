@@ -10,7 +10,7 @@ const VideoContainer = () => {
         margin: "0 auto",
         width: "100%",
         position: "relative",
-        marginTop: "-200px",
+        marginTop: "00px",
         zIndex: 1,
       }}
     >
