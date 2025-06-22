@@ -1,5 +1,5 @@
 import Header from "./components/header";
-import TitleAndVSL from "./components/titleAndVSL";
+import TitleAndVSL from "./components/title";
 import VideoContainer from "./components/videoContainer";
 import "./page.css";
 
