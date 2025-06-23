@@ -1,7 +1,13 @@
+"use client";
 import Image from "next/image";
 import "./section2.css";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 const Section2 = () => {
+  const [ref, isVisible] = useIntersectionObserver<HTMLElement>({
+    threshold: 0.3,
+  });
+
   return (
     <div id="section-2-container">
       <div id="section-2-container-wrapper">
@@ -55,17 +61,11 @@ const Section2 = () => {
           </p>
           <p>
             <span>✅ Se tem muita variação rodando,</span>
-            <span>
-              <br />
-            </span>
             <span> ✅ É porque tem verba sendo investida.</span>
-            <span>
-              <br />
-            </span>
             <span> ✅ E se tem verba, é porque </span>
             <b>está vendendo.</b>
           </p>
-          <b>
+          <b ref={ref} className={`${isVisible ? "fade-in-animation" : ""}`}>
             Esse é o caminho exato pra escalar tráfego direto com inteligência e
             sem rasgar verba.
           </b>
