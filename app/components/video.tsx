@@ -41,7 +41,6 @@ const Video = () => {
         <iframe
           frameBorder="0"
           allowFullScreen={true}
-          allow="autoplay"
           src="https://scripts.converteai.net/50168b72-b90c-4307-88b1-05e70a16f603/players/6852f9583be2bca68d08f0ac/embed.html?autoplay=1" // Adicionado ?autoplay=1
           id="ifr_6852f9583be2bca68d08f0ac"
           title="vsl"

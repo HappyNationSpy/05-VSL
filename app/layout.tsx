@@ -6,21 +6,21 @@ import "./globals.css";
 const saira = Saira({
   variable: "--font-saira",
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: "variable",
 });
 
 // Configurando a fonte Rubik
 const rubik = Rubik({
   variable: "--font-rubik",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: "variable",
 });
 
 // Configurando a fonte Darker Grotesque
 const darkerGrotesque = Darker_Grotesque({
   variable: "--font-darker-grotesque",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: "variable",
 });
 
 export const metadata: Metadata = {

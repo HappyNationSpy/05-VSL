@@ -47,7 +47,7 @@ const VideoContainer = () => {
         <DynamicVideo />
       ) : (
         <Image
-          src="/thumbnail.jpg"
+          src="/thumbnail2.png"
           alt="Prévia do vídeo de apresentação"
           fill
           priority
