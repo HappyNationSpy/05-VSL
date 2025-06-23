@@ -1,7 +1,15 @@
+"use client";
 import Image from "next/image";
 import "./section3.css";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 const Section3 = () => {
+  const [ref, isVisible] = useIntersectionObserver<HTMLDivElement>({
+    threshold: 0.3,
+  });
+  const [imageRef, imageIsVisible] = useIntersectionObserver<HTMLImageElement>({
+    threshold: 0.3,
+  });
   return (
     <div id="section-3-container">
       <div id="section-3-container-wrapper">
@@ -11,7 +19,11 @@ const Section3 = () => {
             máximo de lucro e o mínimo de desperdício?
           </h2>
         </div>
-        <div id="section-3-container-content">
+        <div
+          id="section-3-container-content"
+          className={isVisible ? "fade-in-up-animation" : ""}
+          ref={ref}
+        >
           <p>
             <span>
               A resposta pode ser mais simples (e mais óbvia) do que parece…
@@ -44,6 +56,8 @@ const Section3 = () => {
         </div>
         <div id="section-3-container-image">
           <Image
+            className={imageIsVisible ? "fade-in-animation" : ""}
+            ref={imageRef}
             loading="lazy"
             decoding="async"
             width="768"

@@ -172,7 +172,7 @@
   opacity: 0;
 }
 
-#section-2-container-2>b.fade-in-animation {
+#section-2-container-2>b.fade-in-up-animation {
   animation-name: fade-in-up;
   animation-duration: 1.25s;
   opacity: 1;
