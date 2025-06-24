@@ -1,6 +1,6 @@
 import "./title.css";
 
-const TitleAndVSL = () => {
+const Title = () => {
   return (
     <div id="title-container">
       <div id="title-wrapper">
@@ -21,4 +21,4 @@ const TitleAndVSL = () => {
   );
 };
 
-export default TitleAndVSL;
+export default Title;
