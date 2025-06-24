@@ -63,8 +63,8 @@
   font-weight: 600;
 }
 
-#section-3-container-content.fade-in-up-animation {
-  animation-name: fade-in-up;
+#section-3-container-content.fade-in-top-animation {
+  animation-name: fade-in-top;
   animation-duration: 1.25s;
   opacity: 1;
 }

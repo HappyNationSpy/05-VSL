@@ -68,7 +68,7 @@
 }
 
 #title-wrapper>div {
-  animation: fade-in-up 1.25s 1;
+  animation: fade-in-top 1.25s 1;
   align-self: center;
   flex-grow: 0;
   display: flex;

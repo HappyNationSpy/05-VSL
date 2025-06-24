@@ -65,7 +65,10 @@ const Section2 = () => {
             <span> ✅ E se tem verba, é porque </span>
             <b>está vendendo.</b>
           </p>
-          <b ref={ref} className={`${isVisible ? "fade-in-up-animation" : ""}`}>
+          <b
+            ref={ref}
+            className={`${isVisible ? "fade-in-top-animation" : ""}`}
+          >
             Esse é o caminho exato pra escalar tráfego direto com inteligência e
             sem rasgar verba.
           </b>

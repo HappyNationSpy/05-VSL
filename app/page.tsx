@@ -18,7 +18,6 @@ export default function Home() {
       <Title />
       <VideoContainer />
       <Section2 />
-
       <DynamicLazySections />
     </div>
   );

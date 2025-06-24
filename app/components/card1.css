@@ -7,8 +7,36 @@
   flex-direction: column;
   gap: 27px;
   justify-content: center;
+  opacity: 0;
   padding: 50px 30px;
 }
+
+
+.section-5-card-container.fade-in-left {
+  animation-name: fade-in-left;
+  animation-duration: 1.25s;
+  opacity: 1;
+}
+
+.section-5-card-container.fade-in-right {
+  animation-name: fade-in-right;
+  animation-duration: 1.25s;
+  opacity: 1;
+}
+
+.section-5-card-container.fade-in-bottom {
+  animation-name: fade-in-bottom;
+  animation-duration: 1.25s;
+  opacity: 1;
+}
+
+.section-5-card-container.fade-in-top {
+  animation-name: fade-in-top;
+  animation-duration: 1.25s;
+  opacity: 1;
+}
+
+
 
 .section-5-card-container h2 {
   font-size: 22px;

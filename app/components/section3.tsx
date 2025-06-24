@@ -21,7 +21,7 @@ const Section3 = () => {
         </div>
         <div
           id="section-3-container-content"
-          className={isVisible ? "fade-in-up-animation" : ""}
+          className={isVisible ? "fade-in-top-animation" : ""}
           ref={ref}
         >
           <p>

@@ -77,7 +77,7 @@
 
 #section-2-container-1:hover {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  transform: scale(1.1);
+
 }
 
 #section-2-container-1-wrapper {
@@ -172,8 +172,8 @@
   opacity: 0;
 }
 
-#section-2-container-2>b.fade-in-up-animation {
-  animation-name: fade-in-up;
+#section-2-container-2>b.fade-in-top-animation {
+  animation-name: fade-in-top;
   animation-duration: 1.25s;
   opacity: 1;
 }
