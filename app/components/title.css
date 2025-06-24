@@ -1,7 +1,7 @@
 #title-container {
   align-self: center;
   /* background-image: url("/capa_deskt_vsl.webp"); */
-  background: purple;
+  background: linear-gradient(to bottom, #7A0A9B 0%, rgba(0, 0, 0, 0) 100%);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 300%;
