@@ -1,0 +1,24 @@
+.section-5-card-container {
+  align-items: center;
+  background: linear-gradient(226deg, color(display-p3 0.0921 0.1086 0.125) -1.16%, color(display-p3 0.0078 0.0118 0.0157) 109.35%);
+  border-radius: 8.1px;
+  border: 0.819px solid color(display-p3 0.1765 0.1765 0.1765);
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: center;
+  padding: 50px 30px;
+}
+
+.section-5-card-container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+}
+
+.section-5-card-bottom {
+  background: linear-gradient(90deg, #8514A4 0%, rgba(0, 0, 0, 0) 100%);
+  height: 3px;
+  width: 100%;
+}
