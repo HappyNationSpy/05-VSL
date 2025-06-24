@@ -35,6 +35,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning={true}>
+      <head>
+        <link
+          rel="preload"
+          href="/capa_deskt_vsl.webp"
+          as="image"
+          fetchPriority="high"
+        />
+      </head>
       <body
         className={`${rubik.variable} ${saira.variable} ${darkerGrotesque.variable}`}
         suppressHydrationWarning={true}
