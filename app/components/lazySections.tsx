@@ -4,6 +4,7 @@ import Section3 from "./section3";
 import Section4 from "./section4";
 import Section5Card1 from "./section5-card-1";
 import Section6 from "./section6";
+import Section7 from "./section7";
 
 const LazySections = () => {
   const [ref, isSectionVisible] = useIntersectionObserver<HTMLDivElement>({
@@ -22,6 +23,7 @@ const LazySections = () => {
           <Section4 />
           <Section5Card1 />
           <Section6 />
+          <Section7 />
         </>
       ) : null}
     </div>
