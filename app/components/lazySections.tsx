@@ -12,6 +12,8 @@ import Section7 from "./section7";
 import Section8 from "./section8";
 import Section9Card2 from "./section9-card2";
 import Section13 from "./section13";
+import Section14Card3 from "./section14-card3";
+import Section15 from "./section15";
 
 const LazySections = () => {
   const [ref, isSectionVisible] = useIntersectionObserver<HTMLDivElement>({
@@ -52,6 +54,8 @@ const LazySections = () => {
           <Section11 />
           <Section12 />
           <Section13 />
+          <Section14Card3 />
+          <Section15 />
         </>
       ) : null}
     </div>
