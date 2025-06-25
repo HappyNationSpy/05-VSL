@@ -1,0 +1,41 @@
+.section-9-card-container {
+  align-items: center;
+  background: linear-gradient(226deg, color(display-p3 0.0921 0.1086 0.125) -1.16%, color(display-p3 0.0078 0.0118 0.0157) 109.35%);
+  border-radius: 0px;
+  border: 0.819px solid color(display-p3 0.1765 0.1765 0.1765);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: center;
+  text-align: left;
+  padding: 40px 15px 15px;
+}
+
+.section-9-card-container h1,
+.section-9-card-container h3,
+.section-9-card-container ul li,
+.section-9-card-container p {
+  font-family: var(--font-darker-grotesque);
+}
+
+
+.section-9-card-container h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+  margin-bottom: 10px;
+}
+
+.section-9-card-container p {
+  margin-bottom: 5px;
+}
+
+.section-9-card-container p,
+.section-9-card-container ul li {
+  color: #B8B8B8;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1;
+}
