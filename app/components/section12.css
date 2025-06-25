@@ -1,0 +1,104 @@
+#section-12-container {
+  align-items: center;
+  background: #030313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 100dvw;
+  width: 100%;
+  z-index: 1;
+}
+
+#section-12-container::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: inherit;
+  right: calc(50% - 400px);
+  width: 10000px;
+  height: 300px;
+  background: #937cff;
+  border-radius: 100%;
+  opacity: 0;
+  filter: blur(150px);
+
+  mix-blend-mode: screen;
+  animation: luz 5s 2s infinite;
+  pointer-events: none;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+#section-12-container-wrapper {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 40px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px 0px;
+  width: 100%;
+}
+
+#section-12-container-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+#section-12-container-content>h2 {
+  font-size: 24px;
+  line-height: 1.3em;
+  font-weight: 600;
+}
+
+#section-12-container-content>div>div {
+  padding: 0px 10px;
+}
+
+#section-12-container-content>div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+#section-12-container-content>div>div:nth-of-type(2) {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+#section-12-container-content>div>div:nth-of-type(2) p span,
+#section-12-container-content>div>div:nth-of-type(2) p b {
+  font-size: 16px;
+  color: #cccccc;
+  font-weight: 500;
+}
+
+#section-12-container-content>div>div>h2 {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+  margin: 15px 0px;
+}
+
+#section-12-container-content img {
+  aspect-ratio: auto 1080/1350;
+  height: auto;
+  max-width: 100%;
+}
