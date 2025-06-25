@@ -114,6 +114,12 @@ a {
   width: 100%;
 }
 
+.breaker-line-orange {
+  background: linear-gradient(270deg, #ED4E00 0%, transparent 60%);
+  height: 0.8px;
+  width: 100%;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
