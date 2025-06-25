@@ -108,6 +108,12 @@ a {
   text-decoration: none;
 }
 
+.breaker-line {
+  background: linear-gradient(90deg, transparent 0%, #C3A470 50%, transparent 100%);
+  height: 1px;
+  width: 100%;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

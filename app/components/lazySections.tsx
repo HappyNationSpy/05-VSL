@@ -1,5 +1,6 @@
 "use client";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+import Section10 from "./section10";
 import Section3 from "./section3";
 import Section4 from "./section4";
 import Section5Card1 from "./section5-card1";
@@ -28,6 +29,7 @@ const LazySections = () => {
           <Section7 />
           <Section8 />
           <Section9Card2 />
+          <Section10 />
         </>
       ) : null}
     </div>
