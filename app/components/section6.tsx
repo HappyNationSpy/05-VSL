@@ -1,7 +1,12 @@
+"use client";
 import Image from "next/image";
 import "./section6.css";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 const Section6 = () => {
+  const [imageRef, imageIsVisible] = useIntersectionObserver<HTMLImageElement>({
+    threshold: 0.1,
+  });
   return (
     <div id="section-6-container">
       <div id="section-6-container-wrapper">
@@ -96,6 +101,8 @@ const Section6 = () => {
           <div>
             {" "}
             <Image
+              className={imageIsVisible ? "fade-in-animation" : ""}
+              ref={imageRef}
               loading="lazy"
               decoding="async"
               width="768"

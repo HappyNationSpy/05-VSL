@@ -9,6 +9,7 @@ const DynamicVideo = dynamic(() => import("./video"));
 const VideoContainer = () => {
   // Estado para controlar se devemos mostrar o vídeo
   const [shouldShowVideo, setShouldShowVideo] = useState(false);
+  const [autoplay, setAutoPlay] = useState(false);
 
   useEffect(() => {
     // Estratégia de Atraso: Espera 3 segundos após o carregamento da página
@@ -44,11 +45,12 @@ const VideoContainer = () => {
       }
     >
       {shouldShowVideo ? (
-        <DynamicVideo />
+        <DynamicVideo autoplay={autoplay} />
       ) : (
         <Image
           src="/thumbnail2.png"
           alt="Prévia do vídeo de apresentação"
+          onClick={() => setAutoPlay(true)}
           fill
           priority
           style={{ objectFit: "cover" }}

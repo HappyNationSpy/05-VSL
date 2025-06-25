@@ -24,13 +24,14 @@ import Script from "next/script";
 //   </svg>
 // );
 
-const Video = () => {
+const Video = ({ autoplay }: { autoplay: boolean }) => {
   return (
     <>
       <Script
         src="https://scripts.converteai.net/lib/js/smartplayer/v1/sdk.min.js"
         data-id="6852f9583be2bca68d08f0ac"
         strategy="lazyOnload"
+        
       />
       <div
         style={{
@@ -52,6 +53,7 @@ const Video = () => {
             height: "100%",
           }}
           referrerPolicy="origin"
+          allow={autoplay ? "autoplay" : ""}
         ></iframe>
       </div>
     </>

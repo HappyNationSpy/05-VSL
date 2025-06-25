@@ -89,9 +89,16 @@
 }
 
 #section-7-container-content>div>img {
-  aspect-ratio: auto 768/600;
+  aspect-ratio: auto 1605/802;
   box-sizing: border-box;
   height: auto;
   max-width: 100%;
   vertical-align: middle;
+  opacity: 0;
+}
+
+#section-7-container-content>div>img.fade-in-animation {
+  animation-name: fade-in-top;
+  animation-duration: 1.25s;
+  opacity: 1;
 }
