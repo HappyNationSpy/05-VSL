@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 import Section10 from "./section10";
 import Section11 from "./section11";
@@ -17,14 +17,12 @@ const LazySections = () => {
   const [ref, isSectionVisible] = useIntersectionObserver<HTMLDivElement>({
     threshold: 0.1,
   });
+  const [timerReached, setTimerReached] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      const titleElement = document.getElementById("title-container");
-
-      if (titleElement)
-        titleElement.style.backgroundImage = 'url("/capa_deskt_vsl.webp"';
-    }, 3000);
+      setTimerReached(true);
+    }, 5000);
 
     return () => {
       clearTimeout(timer);
@@ -37,7 +35,7 @@ const LazySections = () => {
       id="lazy-sections-container"
       style={{ minHeight: "1px", minWidth: "1px" }}
     >
-      {isSectionVisible ? (
+      {isSectionVisible || timerReached ? (
         <>
           <Section3 />
           <Section4 />
