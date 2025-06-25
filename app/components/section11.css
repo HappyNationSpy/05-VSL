@@ -12,7 +12,7 @@
   z-index: 1;
 }
 
-#section-10-container::after {
+#section-11-container::after {
   content: "";
   position: absolute;
   top: 60%;
@@ -32,7 +32,7 @@
   box-sizing: border-box;
 }
 
-#section-10-container-wrapper {
+#section-11-container-wrapper {
   align-items: center;
   box-sizing: border-box;
   display: flex;
@@ -45,7 +45,7 @@
   width: 100%;
 }
 
-#section-10-container-content {
+#section-11-container-content {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -55,14 +55,14 @@
   width: 100%;
 }
 
-#section-10-container-content h2 {
+#section-11-container-content h2 {
   font-size: 30px;
   font-family: var(--font-darker-grotesque);
   font-weight: 600;
   line-height: 0.8em;
 }
 
-#section-10-container-content>div {
+#section-11-container-content>div {
   border: 1px solid;
   border-image: linear-gradient(90deg, #7c3aed, rgba(60, 74, 83, 0)) 1;
   border-right: none;
@@ -70,41 +70,10 @@
   text-align: left;
 }
 
-#section-10-container-content ul {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  list-style: none;
-}
-
-#section-10-container-content ul li {
-  border-bottom: 1px solid #FFFFFF0D;
-  padding-bottom: 10px;
-}
-
-#section-10-container-content ul span {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2em;
-  letter-spacing: -0.4px;
-}
-
-#section-10-container-content h2:nth-of-type(2) {
+#section-11-container-content h2:nth-of-type(2) {
   font-size: 30px;
   font-weight: 600;
   line-height: 1.1em;
   font-family: var(--font-saira);
   margin-top: 20px;
-}
-
-#section-10-container-content h1 {
-  font-family: var(--font-darker-grotesque);
-  font-size: 65px;
-  text-decoration: line-through;
-  font-style: italic;
-  line-height: 1em;
-  font-weight: 700;
-  color: #bd1717;
 }

@@ -39,6 +39,8 @@ const Section10 = () => {
               </li>
             </ul>
           </div>
+          <h2>No total, tudo isso deveria custar:</h2>
+          <h1>R$ 408</h1>
         </div>
       </div>
       <div className="breaker-line" />
