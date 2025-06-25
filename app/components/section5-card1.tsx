@@ -1,5 +1,5 @@
 "use client";
-import "./section5-card-1.css";
+import "./section5-card1.css";
 import Card from "./card1";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
