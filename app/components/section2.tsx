@@ -16,7 +16,7 @@ const Section2 = () => {
             <h2>DIGITE UMA DOR OU PROMESSA DO SEU NICHO</h2>
             <div id="section-2-container-1-image-wrapper">
               <Image
-                loading="lazy"
+                // loading="lazy"
                 decoding="async"
                 width="551"
                 height="701"
