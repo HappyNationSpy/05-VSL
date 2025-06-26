@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image"; // 1. Importe o componente Image
 
@@ -8,18 +8,18 @@ const DynamicVideo = dynamic(() => import("./video"));
 
 const VideoContainer = () => {
   // Estado para controlar se devemos mostrar o vídeo
-  const [shouldShowVideo, setShouldShowVideo] = useState(false);
+  const [shouldShowVideo] = useState(true);
   const [autoplay, setAutoPlay] = useState(true);
 
-  useEffect(() => {
-    // Estratégia de Atraso: Espera 3 segundos após o carregamento da página
-    const timer = setTimeout(() => {
-      setShouldShowVideo(true);
-    }, 500); // 3 segundos de atraso
+  // useEffect(() => {
+  //   // Estratégia de Atraso: Espera 3 segundos após o carregamento da página
+  //   const timer = setTimeout(() => {
+  //     setShouldShowVideo(true);
+  //   }, 500); // 3 segundos de atraso
 
-    // Limpa o timer se o componente for desmontado
-    return () => clearTimeout(timer);
-  }, []);
+  //   // Limpa o timer se o componente for desmontado
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <div
