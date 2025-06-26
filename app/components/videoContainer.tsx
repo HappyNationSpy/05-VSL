@@ -8,8 +8,8 @@ const DynamicVideo = dynamic(() => import("./video"));
 
 const VideoContainer = () => {
   // Estado para controlar se devemos mostrar o vídeo
-  const [shouldShowVideo, setShouldShowVideo] = useState(false);
-  const [autoplay, setAutoPlay] = useState(false);
+  const [shouldShowVideo, setShouldShowVideo] = useState(true);
+  const [autoplay, setAutoPlay] = useState(true);
 
   useEffect(() => {
     // Estratégia de Atraso: Espera 3 segundos após o carregamento da página
