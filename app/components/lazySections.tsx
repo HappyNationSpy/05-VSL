@@ -24,10 +24,10 @@ const LazySections = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimerReached(true);
-      const titleElement = document.getElementById("title-container");
+      // const titleElement = document.getElementById("title-container");
 
-      if (titleElement)
-        titleElement.style.backgroundImage = 'url("/capa_deskt_vsl.webp"';
+      // if (titleElement)
+      //   titleElement.style.backgroundImage = 'url("/capa_deskt_vsl.webp"';
     }, 5000);
 
     return () => {
