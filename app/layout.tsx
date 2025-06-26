@@ -35,7 +35,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning={true}>
-      <head></head>
       <body
         className={`${rubik.variable} ${saira.variable} ${darkerGrotesque.variable}`}
         suppressHydrationWarning={true}
