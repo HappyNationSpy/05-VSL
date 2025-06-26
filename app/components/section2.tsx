@@ -18,6 +18,7 @@ const Section2 = () => {
               <Image
                 loading="lazy"
                 decoding="async"
+                priority={true}
                 width="551"
                 height="701"
                 src="/asset-imagem.webp"
